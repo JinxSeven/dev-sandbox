@@ -43,5 +43,5 @@ testem.log
 Thumbs.db
 
 
-// git ls-files Sequel101 | xargs -I{} git update-index --no-assume-unchanged "{}"
-// Revert: git update-index --no-assume-unchanged path/to/folder/*
+// Untrack: git update-index --no-assume-unchanged path/to/folder/*
+// Advanced: git ls-files Sequel101 | xargs -I{} git update-index --assume-unchanged "{}"
