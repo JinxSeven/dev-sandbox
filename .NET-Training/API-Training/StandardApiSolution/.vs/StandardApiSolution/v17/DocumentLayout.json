@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\StandardApiSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5E17BF-D255-B5B4-24C0-165EA1E20476}|KnowledgeBase\\KnowledgeBaseApi.csproj|d:\\skills\\jinxseven\\training-web-development\\.net-training\\api-training\\standardapisolution\\knowledgebase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E5E17BF-D255-B5B4-24C0-165EA1E20476}|KnowledgeBase\\KnowledgeBaseApi.csproj|solutionrelative:knowledgebase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\StandardApiSolution\\KnowledgeBase\\appsettings.json",
+              "RelativeDocumentMoniker": "KnowledgeBase\\appsettings.json",
+              "ToolTip": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\StandardApiSolution\\KnowledgeBase\\appsettings.json",
+              "RelativeToolTip": "KnowledgeBase\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-28T14:58:30.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
