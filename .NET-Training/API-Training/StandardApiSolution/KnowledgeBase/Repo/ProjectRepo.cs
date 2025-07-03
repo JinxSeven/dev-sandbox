@@ -1,8 +1,8 @@
 using System.Data;
+using KnowledgeBaseApi.Models;
 using Microsoft.Data.SqlClient;
-using TaskTracker.Models;
 
-namespace TaskTracker.Data
+namespace KnowledgeBaseApi.Repo
 {
     public class ProjectRepo
     {
@@ -64,7 +64,7 @@ namespace TaskTracker.Data
                         ProjectName = reader[projectNameIndex].ToString()!, // Required field
                         Description = reader.IsDBNull(descriptionIndex) ? null : reader[descriptionIndex].ToString()!, // Nullable
                         StartDate = reader.GetDateTime(startDateIndex), // Non-nullable DateTime
-                        EndDate = reader.IsDBNull(endDateIndex) ? (DateTime?)null : reader.GetDateTime(endDateIndex), // Nullable DateTime
+                        EndDate = reader.IsDBNull(endDateIndex) ? null : reader.GetDateTime(endDateIndex), // Nullable DateTime
                         ClientId = Guid.Parse(reader[clientIdIndex].ToString()!) // Parse GUID
                     });
                 }

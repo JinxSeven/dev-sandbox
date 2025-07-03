@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
+using KnowledgeBaseApi.Models;
+using KnowledgeBaseApi.Repo;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using TaskTracker.Data;
-using TaskTracker.Models;
 
-namespace TaskTracker.Controllers
+namespace KnowledgeBaseApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

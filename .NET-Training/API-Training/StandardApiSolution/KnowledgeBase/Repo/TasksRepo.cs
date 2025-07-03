@@ -1,8 +1,7 @@
 ﻿using System.Data;
 using Microsoft.Data.SqlClient;
-using TaskTracker.Models;
 
-namespace TaskTracker.Data
+namespace KnowledgeBaseApi.Repo
 {
     public class TasksRepo
     {
@@ -56,7 +55,7 @@ namespace TaskTracker.Data
                 await connection.OpenAsync();
 
                 SqlCommand addNewTaskCmd = new SqlCommand("usp_AddTask", connection);
-                addNewTaskCmd.CommandType = System.Data.CommandType.StoredProcedure;
+                addNewTaskCmd.CommandType = CommandType.StoredProcedure;
                 addNewTaskCmd.Parameters.AddWithValue("@user_id", taskData.UserId);
                 addNewTaskCmd.Parameters.AddWithValue("@client_name", taskData.ClientName);
                 addNewTaskCmd.Parameters.AddWithValue("@project_name", taskData.ProjectName);
@@ -69,9 +68,9 @@ namespace TaskTracker.Data
                 addNewTaskCmd.Parameters.AddWithValue("@priority", taskData.Priority);
                 addNewTaskCmd.Parameters.AddWithValue("@description", taskData.Description);
 
-                SqlParameter outputIdParam = new SqlParameter("@task_id", System.Data.SqlDbType.UniqueIdentifier)
+                SqlParameter outputIdParam = new SqlParameter("@task_id", SqlDbType.UniqueIdentifier)
                 {
-                    Direction = System.Data.ParameterDirection.Output
+                    Direction = ParameterDirection.Output
                 };
                 addNewTaskCmd.Parameters.Add(outputIdParam);
 
@@ -90,7 +89,7 @@ namespace TaskTracker.Data
                 connection.Open();
 
                 SqlCommand setStateCmd = new SqlCommand("usp_UpdateTaskState", connection);
-                setStateCmd.CommandType = System.Data.CommandType.StoredProcedure;
+                setStateCmd.CommandType = CommandType.StoredProcedure;
                 setStateCmd.Parameters.AddWithValue("@id", taskId);
                 setStateCmd.Parameters.AddWithValue("@task_state", taskState);
                 setStateCmd.ExecuteNonQuery();
@@ -106,7 +105,7 @@ namespace TaskTracker.Data
                 connection.Open();
 
                 SqlCommand editTaskCmd = new SqlCommand("usp_EditTask", connection);
-                editTaskCmd.CommandType = System.Data.CommandType.StoredProcedure;
+                editTaskCmd.CommandType = CommandType.StoredProcedure;
                 editTaskCmd.Parameters.AddWithValue("@task_id", taskData.Id);
                 editTaskCmd.Parameters.AddWithValue("@client_name", taskData.ClientName);
                 editTaskCmd.Parameters.AddWithValue("@project_name", taskData.ProjectName);
@@ -161,7 +160,7 @@ namespace TaskTracker.Data
                 connection.Open();
 
                 var deleteTaskCmd = new SqlCommand("usp_DeleteTask", connection);
-                deleteTaskCmd.CommandType = System.Data.CommandType.StoredProcedure;
+                deleteTaskCmd.CommandType = CommandType.StoredProcedure;
                 deleteTaskCmd.Parameters.AddWithValue("@task_id", taskId);
                 deleteTaskCmd.ExecuteNonQuery();
 

@@ -1,4 +1,4 @@
-﻿namespace TaskTracker.Models
+﻿namespace KnowledgeBaseApi.Models
 {
     public class Task
     {

@@ -1,12 +1,11 @@
 ﻿using Dapper;
+using KnowledgeBaseApi.Models;
+using KnowledgeBaseApi.Models.DTOs;
 using Microsoft.Data.SqlClient;
 using Newtonsoft.Json;
 using System.Data;
-using TaskTracker.Data;
-using TaskTracker.Models;
-using TaskTracker.Models.DTOs;
 
-namespace TaskTracker.Repo
+namespace KnowledgeBaseApi.Repo
 {
     public class ComplianceRepo
     {

@@ -1,4 +1,4 @@
-namespace TaskTracker.Models.DTOs
+namespace KnowledgeBaseApi.Models.DTOs
 {
     public class AssignedComplianceDTO
     {

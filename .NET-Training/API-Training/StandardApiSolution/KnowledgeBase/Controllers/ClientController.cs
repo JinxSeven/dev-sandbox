@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using TaskTracker.Models;
-using TaskTracker.Repo;
+﻿using KnowledgeBaseApi.Repo;
+using Microsoft.AspNetCore.Mvc;
+using KnowledgeBaseApi.Models;
 
-namespace TaskTracker.Controllers
+namespace KnowledgeBaseApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Diagnostics;
-using TaskTracker.Models;
+using KnowledgeBaseApi.Models;
 
-namespace TaskTracker.Data
+namespace KnowledgeBaseApi.Repo
 {
     public class ActivitiesRepo
     {

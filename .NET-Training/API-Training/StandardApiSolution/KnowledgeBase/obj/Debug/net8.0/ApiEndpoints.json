@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "TaskTracker.Controllers.ActivityController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
     "Method": "AddNewActivity",
     "RelativePath": "api/Activity/AddNewActivity",
     "HttpMethod": "POST",
@@ -9,14 +9,14 @@
     "Parameters": [
       {
         "Name": "activityData",
-        "Type": "TaskTracker.Models.Activity",
+        "Type": "KnowledgeBaseApi.Models.Activity",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ActivityController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
     "Method": "DeleteActivity",
     "RelativePath": "api/Activity/Delete",
     "HttpMethod": "DELETE",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ActivityController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
     "Method": "EditActivity",
     "RelativePath": "api/Activity/Edit",
     "HttpMethod": "PUT",
@@ -41,14 +41,14 @@
     "Parameters": [
       {
         "Name": "activityData",
-        "Type": "TaskTracker.Models.Activity",
+        "Type": "KnowledgeBaseApi.Models.Activity",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ActivityController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
     "Method": "GetTaskActivities",
     "RelativePath": "api/Activity/GetTaskActivities",
     "HttpMethod": "GET",
@@ -64,7 +64,33 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ClientController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.AuthenticationController",
+    "Method": "AuthenticateUser",
+    "RelativePath": "api/Authentication/TokenAuth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "KnowledgeBaseApi.Controllers.AuthenticationController\u002BAuthenticationData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KnowledgeBaseApi.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ClientController",
     "Method": "GetAllClientNames",
     "RelativePath": "api/Client/GetAllClientNames",
     "HttpMethod": "GET",
@@ -74,7 +100,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ClientController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ClientController",
     "Method": "GetAllClients",
     "RelativePath": "api/Client/GetAllClients",
     "HttpMethod": "GET",
@@ -84,7 +110,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ComplianceController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
     "Method": "AddNewComplianceAsync",
     "RelativePath": "api/Compliance/AddNewCompliance",
     "HttpMethod": "POST",
@@ -93,14 +119,14 @@
     "Parameters": [
       {
         "Name": "compliance",
-        "Type": "TaskTracker.Models.Compliance",
+        "Type": "KnowledgeBaseApi.Models.Compliance",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ComplianceController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
     "Method": "AssignCompliance",
     "RelativePath": "api/Compliance/AssignCompliance",
     "HttpMethod": "POST",
@@ -121,7 +147,23 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ComplianceController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetAssignedCompliancesById",
+    "RelativePath": "api/Compliance/GetAssignedCompliancesById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
     "Method": "GetComplianceDetails",
     "RelativePath": "api/Compliance/GetComplianceDetails",
     "HttpMethod": "GET",
@@ -131,7 +173,39 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ProjectController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetPptByComplianceId",
+    "RelativePath": "api/Compliance/GetPptByComplianceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetQuestionsByCompliancesId",
+    "RelativePath": "api/Compliance/GetQuestionsByCompliancesId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ProjectController",
     "Method": "GetProjectListByClientId",
     "RelativePath": "api/Project/GetProjectListByClientId",
     "HttpMethod": "GET",
@@ -147,7 +221,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.ProjectController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.ProjectController",
     "Method": "GetProjectsByClientId",
     "RelativePath": "api/Project/getProjectsByClientId",
     "HttpMethod": "GET",
@@ -163,7 +237,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "AddNewTask",
     "RelativePath": "api/Task/AddNewTask",
     "HttpMethod": "POST",
@@ -172,14 +246,14 @@
     "Parameters": [
       {
         "Name": "taskData",
-        "Type": "TaskTracker.Models.Task",
+        "Type": "KnowledgeBaseApi.Models.Task",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "DeleteTask",
     "RelativePath": "api/Task/DeleteTask",
     "HttpMethod": "DELETE",
@@ -195,7 +269,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "EditTask",
     "RelativePath": "api/Task/EditTask",
     "HttpMethod": "PUT",
@@ -204,14 +278,14 @@
     "Parameters": [
       {
         "Name": "taskData",
-        "Type": "TaskTracker.Models.Task",
+        "Type": "KnowledgeBaseApi.Models.Task",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "GetTasks",
     "RelativePath": "api/Task/GetTasks",
     "HttpMethod": "GET",
@@ -227,7 +301,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "GetUserTaskStats",
     "RelativePath": "api/Task/GetUserTaskStats",
     "HttpMethod": "GET",
@@ -237,7 +311,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.TaskController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
     "Method": "UpdateTaskState",
     "RelativePath": "api/Task/UpdateTaskState",
     "HttpMethod": "PATCH",
@@ -258,7 +332,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.UserController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
     "Method": "AddNewUser",
     "RelativePath": "api/User/AddNewUser",
     "HttpMethod": "POST",
@@ -267,14 +341,14 @@
     "Parameters": [
       {
         "Name": "userData",
-        "Type": "TaskTracker.Models.User",
+        "Type": "KnowledgeBaseApi.Models.User",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.UserController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
     "Method": "GetAllAdminNames",
     "RelativePath": "api/User/GetAllAdminNames",
     "HttpMethod": "GET",
@@ -284,7 +358,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.UserController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
     "Method": "GetAllUserNames",
     "RelativePath": "api/User/GetAllUserNames",
     "HttpMethod": "GET",
@@ -294,7 +368,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.UserController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
     "Method": "GetLoggedUser",
     "RelativePath": "api/User/GetLoggedUser",
     "HttpMethod": "GET",
@@ -315,7 +389,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskTracker.Controllers.UserController",
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
     "Method": "GetUserStatsByIdAsync",
     "RelativePath": "api/User/GetUserStatsById",
     "HttpMethod": "GET",

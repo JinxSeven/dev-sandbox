@@ -1,8 +1,7 @@
-﻿using Microsoft.Data.SqlClient;
-using TaskTracker.Data;
-using TaskTracker.Models;
+﻿using KnowledgeBaseApi.Models;
+using Microsoft.Data.SqlClient;
 
-namespace TaskTracker.Repo
+namespace KnowledgeBaseApi.Repo
 {
     public class ClientRepo
     {

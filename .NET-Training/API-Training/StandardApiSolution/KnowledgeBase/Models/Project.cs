@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace TaskTracker.Models
+namespace KnowledgeBaseApi.Models
 {
     public class Project
     {

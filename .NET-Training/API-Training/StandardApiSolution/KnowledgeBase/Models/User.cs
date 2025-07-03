@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TaskTracker.Models
+namespace KnowledgeBaseApi.Models
 {
     public class User
     {

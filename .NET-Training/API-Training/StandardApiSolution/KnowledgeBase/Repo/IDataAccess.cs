@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-namespace TaskTracker.Data
+namespace KnowledgeBaseApi.Repo
 {
     public interface IDataAccess
     {
@@ -13,7 +13,7 @@ namespace TaskTracker.Data
 
         public DataAccess(string? connStr)
         {
-            this.conn = new SqlConnection(connStr);
+            conn = new SqlConnection(connStr);
         }
 
         public SqlConnection ReturnConn()
