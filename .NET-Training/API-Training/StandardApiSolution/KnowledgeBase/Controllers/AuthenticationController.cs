@@ -1,5 +1,6 @@
 ﻿using KnowledgeBaseApi.Models;
 using KnowledgeBaseApi.Repo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -12,13 +13,14 @@ namespace KnowledgeBaseApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class AuthenticationController : ControllerBase
     {
         private readonly UsersRepo _userRepo;
         private readonly IConfiguration _config;
-        private readonly ILogger _logger;
+        private readonly ILogger<AuthenticationController> _logger;
 
-        public AuthenticationController(UsersRepo userRepo, IConfiguration config, ILogger logger)
+        public AuthenticationController(UsersRepo userRepo, IConfiguration config, ILogger<AuthenticationController> logger)
         {
             _userRepo = userRepo;
             _config = config;
@@ -37,8 +39,9 @@ namespace KnowledgeBaseApi.Controllers
                 return Unauthorized();
             }
 
-            var jwt = GenerateJWToken((User)user);
+            var jwt = GenerateJWToken(user);
 
+            _logger.LogInformation("User ID {UserId}", user.Id);
             return Ok(jwt);
         }
 
@@ -55,15 +58,15 @@ namespace KnowledgeBaseApi.Controllers
             claims.Add(new(JwtRegisteredClaimNames.Jti, user.Id.ToString()));
             claims.Add(new(JwtRegisteredClaimNames.UniqueName, user.Username));
             claims.Add(new(JwtRegisteredClaimNames.Email, user.Email));
-            claims.Add(new Claim(ClaimTypes.Role, user.IsAdmin ? "Admin" : "User"));
-
+            claims.Add(new Claim("role", user.IsAdmin ? "Admin" : "User"));
+            
             var token = new JwtSecurityToken
                 (
                     _config.GetValue<string>("Authentication:Issuer"),
                     _config.GetValue<string>("Authentication:Audience"),
                     claims,
                     DateTime.UtcNow,
-                    DateTime.UtcNow.AddMinutes(1.5),
+                    DateTime.UtcNow.AddMinutes(30),
                     signingCredentials
                 );
 

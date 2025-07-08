@@ -1,7 +1,9 @@
 using KnowledgeBaseApi.Repo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.IdentityModel.Tokens.Experimental;
 using System.Text;
+using WatchDog;
 
 namespace KnowledgeBaseApi;
 
@@ -16,6 +18,9 @@ public class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services.AddWatchDogServices();
+
         builder.Services.AddAuthentication("Bearer")
             .AddJwtBearer(options =>
             {
@@ -30,6 +35,17 @@ public class Program
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration.GetValue<string>("Authentication:SecretKey")!))
                 };
             });
+        builder.Services.AddAuthorization(options =>
+        {
+            options.AddPolicy("AdminOnly", policy =>
+            {
+                policy.RequireRole("Admin");
+            });
+            options.FallbackPolicy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser().Build();
+        });
+
+        builder.Logging.AddWatchDogLogger();
 
         builder.Services.AddScoped<IDataAccess>(provider =>
         {
@@ -58,12 +74,26 @@ public class Program
             app.UseSwaggerUI();
         }
 
+        app.UseWatchDogExceptionLogger();
+
         app.UseHttpsRedirection();
 
         app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllers();
+
+        app.UseWatchDog(options =>
+        {
+            options.WatchPageUsername = "admin";
+            options.WatchPagePassword = "Admin@123";
+        });
+
+        var endpointDataSource = app.Services.GetRequiredService<EndpointDataSource>();
+        foreach (var endpoint in endpointDataSource.Endpoints)
+        {
+            Console.WriteLine($"Route: {endpoint.DisplayName}");
+        }
 
         app.Run();
     }

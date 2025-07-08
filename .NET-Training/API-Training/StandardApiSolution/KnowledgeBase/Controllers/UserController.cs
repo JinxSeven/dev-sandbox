@@ -1,9 +1,7 @@
-﻿using System.Threading.Tasks;
-using KnowledgeBaseApi.Models;
+﻿using KnowledgeBaseApi.Models;
 using KnowledgeBaseApi.Repo;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 
 namespace KnowledgeBaseApi.Controllers
 {
@@ -19,6 +17,7 @@ namespace KnowledgeBaseApi.Controllers
 
         [HttpGet]
         [Route("GetUserStatsById")]
+        [Authorize]
         public async Task<IActionResult> GetUserStatsByIdAsync(Guid userId)
         {
             try
@@ -62,6 +61,7 @@ namespace KnowledgeBaseApi.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "AdminOnly")]
         [Route("GetAllUserNames")]
         public async Task<IActionResult> GetAllUserNames() {
             try 
