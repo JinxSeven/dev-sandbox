@@ -1,0 +1,407 @@
+[
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
+    "Method": "AddNewActivity",
+    "RelativePath": "api/Activity/AddNewActivity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activityData",
+        "Type": "KnowledgeBaseApi.Models.Activity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
+    "Method": "DeleteActivity",
+    "RelativePath": "api/Activity/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activityId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
+    "Method": "EditActivity",
+    "RelativePath": "api/Activity/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activityData",
+        "Type": "KnowledgeBaseApi.Models.Activity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ActivityController",
+    "Method": "GetTaskActivities",
+    "RelativePath": "api/Activity/GetTaskActivities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.AuthenticationController",
+    "Method": "AuthenticateUser",
+    "RelativePath": "api/Authentication/TokenAuth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "KnowledgeBaseApi.Controllers.AuthenticationController\u002BAuthenticationData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KnowledgeBaseApi.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ClientController",
+    "Method": "GetAllClientNames",
+    "RelativePath": "api/Client/GetAllClientNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ClientController",
+    "Method": "GetAllClients",
+    "RelativePath": "api/Client/GetAllClients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "AddNewComplianceAsync",
+    "RelativePath": "api/Compliance/AddNewCompliance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compliance",
+        "Type": "KnowledgeBaseApi.Models.Compliance",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "AssignCompliance",
+    "RelativePath": "api/Compliance/AssignCompliance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "compId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetAssignedCompliancesById",
+    "RelativePath": "api/Compliance/GetAssignedCompliancesById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetComplianceDetails",
+    "RelativePath": "api/Compliance/GetComplianceDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetPptByComplianceId",
+    "RelativePath": "api/Compliance/GetPptByComplianceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ComplianceController",
+    "Method": "GetQuestionsByCompliancesId",
+    "RelativePath": "api/Compliance/GetQuestionsByCompliancesId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ProjectController",
+    "Method": "GetProjectListByClientId",
+    "RelativePath": "api/Project/GetProjectListByClientId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.ProjectController",
+    "Method": "GetProjectsByClientId",
+    "RelativePath": "api/Project/getProjectsByClientId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "AddNewTask",
+    "RelativePath": "api/Task/AddNewTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskData",
+        "Type": "KnowledgeBaseApi.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/Task/DeleteTask",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "EditTask",
+    "RelativePath": "api/Task/EditTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskData",
+        "Type": "KnowledgeBaseApi.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "GetTasks",
+    "RelativePath": "api/Task/GetTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "GetUserTaskStats",
+    "RelativePath": "api/Task/GetUserTaskStats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.TaskController",
+    "Method": "UpdateTaskState",
+    "RelativePath": "api/Task/UpdateTaskState",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "taskState",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
+    "Method": "AddNewUser",
+    "RelativePath": "api/User/AddNewUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userData",
+        "Type": "KnowledgeBaseApi.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
+    "Method": "GetAllAdminNames",
+    "RelativePath": "api/User/GetAllAdminNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
+    "Method": "GetAllUserNames",
+    "RelativePath": "api/User/GetAllUserNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
+    "Method": "GetLoggedUser",
+    "RelativePath": "api/User/GetLoggedUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KnowledgeBaseApi.Controllers.UserController",
+    "Method": "GetUserStatsByIdAsync",
+    "RelativePath": "api/User/GetUserStatsById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
