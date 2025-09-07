@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HqxepaPGuaY=",
+  "success": true,
+  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GodBless\\.nuget\\packages\\confluent.kafka\\2.11.1\\confluent.kafka.2.11.1.nupkg.sha512",
+    "C:\\Users\\GodBless\\.nuget\\packages\\librdkafka.redist\\2.11.1\\librdkafka.redist.2.11.1.nupkg.sha512",
+    "C:\\Users\\GodBless\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+  ],
+  "logs": []
+}

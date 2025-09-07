@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.NET-Training",
+    "\\.NET-Training\\Backend-Training",
+    "\\.NET-Training\\Backend-Training\\Kafka101",
+    "\\.NET-Training\\Backend-Training\\Kafka101\\Producer",
+    "\\.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer"
   ],
+  "SelectedNode": "\\.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
