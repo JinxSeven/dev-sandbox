@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KnowledgeBaseApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ef308f8502bbfc349ffd64b0d95038268e87de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f1f1cd60f2b6fb1581bdebf7c52a4058e47c25")]
 [assembly: System.Reflection.AssemblyProductAttribute("KnowledgeBaseApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KnowledgeBaseApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

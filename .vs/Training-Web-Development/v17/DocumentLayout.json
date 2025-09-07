@@ -1,12 +1,41 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC2D9AB-FA7B-4B3C-9E81-986A24F3C04D}|.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Producer.csproj|d:\\skills\\jinxseven\\training-web-development\\.net-training\\backend-training\\kafka101\\producer\\producer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC2D9AB-FA7B-4B3C-9E81-986A24F3C04D}|.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Producer.csproj|solutionrelative:.net-training\\backend-training\\kafka101\\producer\\producer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Program.cs",
+              "RelativeDocumentMoniker": ".NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Program.cs",
+              "ToolTip": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Program.cs",
+              "RelativeToolTip": ".NET-Training\\Backend-Training\\Kafka101\\Producer\\Producer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T15:18:06.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
