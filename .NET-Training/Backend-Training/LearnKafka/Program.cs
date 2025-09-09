@@ -1,15 +1,16 @@
 ﻿using Confluent.Kafka;
 using System;
 
+using Producer.Models;
+using System.Text.Json;
+using Producer.Data;
+
 namespace Producer;
 class Producer
 {
     static void Main(string[] args)
     {
         const string topic = "purchases";
-
-        string[] users = { "samuel", "lucia", "rose", "raelyn", "niko", "leo" };
-        string[] items = { "book", "alarm clock", "t-shirts", "gift card", "batteries" };
 
         var config = new ProducerConfig
         {
@@ -27,11 +28,17 @@ class Producer
             const int numMessages = 10;
             for (int i = 0; i < numMessages; ++i)
             {
-                var user = users[rnd.Next(users.Length)];
-                var item = items[rnd.Next(items.Length)];
+                var user = User.GetRandomUser();
+                var item = new PurchaseData
+                {
+                    ProductName = new Item().GetRandomItem()
+                };
+
+                string itemData = JsonSerializer.Serialize(item);
+
                 var dateTime = new Timestamp(DateTime.UtcNow);
 
-                producer.Produce(topic, new Message<string, string> { Key = user, Value = item, Timestamp = dateTime },
+                producer.Produce(topic, new Message<string, string> { Key = user, Value = itemData, Timestamp = dateTime },
                     (deliveryReport) =>
                     {
                         if (deliveryReport.Error.Code != ErrorCode.NoError)
@@ -40,7 +47,7 @@ class Producer
                         }
                         else
                         {
-                            Console.WriteLine($"Produced event to topic {topic}: key = {user,-5} value = {item}");
+                            Console.WriteLine($"Produced event to topic {topic}: key = {user} | value = {item}");
                             numProduced += 1;
                         }
                     });
