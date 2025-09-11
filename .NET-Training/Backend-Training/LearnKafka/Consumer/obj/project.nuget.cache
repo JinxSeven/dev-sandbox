@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "F9HGipO8ImY=",
+  "success": true,
+  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Consumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GodBless\\.nuget\\packages\\confluent.kafka\\2.11.1\\confluent.kafka.2.11.1.nupkg.sha512",
+    "C:\\Users\\GodBless\\.nuget\\packages\\librdkafka.redist\\2.11.1\\librdkafka.redist.2.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}

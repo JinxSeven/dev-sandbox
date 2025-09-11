@@ -54,18 +54,18 @@ docker run --rm -d --network kafka-net -p 7000:8080 -e DYNAMIC_CONFIG_ENABLED=tr
 #### Build
 
 ```bash
-docker build -t csharp-app .
+docker build -t image-name .
 ```
 
 #### Run
 
 ```bash
-docker run --rm --network kafka-net --name application-name csharp-app
+docker run --rm --network kafka-net --name container-name image-name
 ```
 
 ---
 
-## ⚡ Notes
+## Notes
 
 * Use `kafka-cluster:9092` as `BootstrapServers` in your .NET app config.
 * `ADV_HOST=kafka-cluster` ensures Kafka advertises itself correctly inside the Docker network.
