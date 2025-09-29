@@ -32,10 +32,13 @@ class Producer
                 };
 
                 string itemData = JsonSerializer.Serialize(item);
-
                 var dateTime = new Timestamp(DateTime.UtcNow);
+                var header = new Headers
+                {
+                    {"eventType", System.Text.Encoding.UTF8.GetBytes("Purchase")}
+                };
 
-                producer.Produce(topic, new Message<string, string> { Key = user, Value = itemData, Timestamp = dateTime },
+                producer.Produce(topic, new Message<string, string> { Key = user, Value = itemData, Timestamp = dateTime,  Headers = header },
                     (deliveryReport) =>
                     {
                         if (deliveryReport.Error.Code != ErrorCode.NoError)
