@@ -15,7 +15,10 @@ namespace Consumer
                 Acks = Acks.All
             };
 
-            //using ConsumerBuilder<>
+            using (var consumer = new ConsumerBuilder<string, string>(config).Build())
+            {
+
+            }
         }
     }
 }

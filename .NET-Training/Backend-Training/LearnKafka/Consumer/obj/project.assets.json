@@ -206,9 +206,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Consumer.csproj",
-      "projectName": "Consumer",
-      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Consumer.csproj",
+      "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Simple MessageConsumer.csproj",
+      "projectName": "Simple MessageConsumer",
+      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Simple MessageConsumer.csproj",
       "packagesPath": "C:\\Users\\GodBless\\.nuget\\packages\\",
       "outputPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\obj\\",
       "projectStyle": "PackageReference",

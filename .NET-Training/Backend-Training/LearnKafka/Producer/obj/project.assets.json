@@ -294,9 +294,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer\\Producer.csproj",
-      "projectName": "Producer",
-      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer\\Producer.csproj",
+      "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer\\SimpleMessageProducer.csproj",
+      "projectName": "SimpleMessageProducer",
+      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer\\SimpleMessageProducer.csproj",
       "packagesPath": "C:\\Users\\GodBless\\.nuget\\packages\\",
       "outputPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Producer\\obj\\",
       "projectStyle": "PackageReference",

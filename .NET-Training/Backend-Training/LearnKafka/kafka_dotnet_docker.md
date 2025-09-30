@@ -14,34 +14,34 @@ docker network create kafka-net
 
 ### 2. Start Kafka
 
-#### Option A: Build image locally
+#### Option A: Build image locally (if repo is cloned)
 
 ```bash
 docker build -t lenses-kafka .
-docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name kafka-cluster lenses-kafka
+docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name lenses-kafka-cluster lenses-kafka
 ```
 
 #### Option B: Pull from Docker Hub
 
 ```bash
-docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name kafka-cluster lensesio/fast-data-dev
+docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name lenses-kafka-cluster lensesio/fast-data-dev
 ```
 
 ---
 
 ### 3. Run Kafka UI
 
-#### Option A: Build image locally
+#### Option A: Build image locally (if repo is cloned)
 
 ```bash
 docker build -t provectuslabs/kafka-ui .
-docker run --rm -d --network kafka-net -p 7000:8080 -e DYNAMIC_CONFIG_ENABLED=true --name kafka-ui provectuslabs/kafka-ui
+docker run --rm -d --network kafka-net -p 7000:8080 -e DYNAMIC_CONFIG_ENABLED=true --name provectus-kafka-ui provectuslabs/kafka-ui
 ```
 
 #### Option B: Pull from Docker Hub
 
 ```bash
-docker run --rm -d --network kafka-net -p 7000:8080 -e DYNAMIC_CONFIG_ENABLED=true --name kafka-ui provectuslabs/kafka-ui
+docker run --rm -d --network kafka-net -p 7000:8080 -e DYNAMIC_CONFIG_ENABLED=true --name provectus-kafka-ui provectuslabs/kafka-ui
 ```
 
 
