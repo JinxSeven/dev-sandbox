@@ -18,13 +18,13 @@ docker network create kafka-net
 
 ```bash
 docker build -t lenses-kafka .
-docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name lenses-kafka-cluster lenses-kafka
+docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=lenses-kafka-cluster --name lenses-kafka-cluster lenses-kafka
 ```
 
 #### Option B: Pull from Docker Hub
 
 ```bash
-docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=kafka-cluster --name lenses-kafka-cluster lensesio/fast-data-dev
+docker run --rm -d --network kafka-net -p 2181:2181 -p 3030:3030 -p 9092:9092 -p 8081:8081 -p 8082:8082 -e ADV_HOST=lenses-kafka-cluster --name lenses-kafka-cluster lensesio/fast-data-dev
 ```
 
 ---

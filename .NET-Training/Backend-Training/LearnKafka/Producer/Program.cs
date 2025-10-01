@@ -4,17 +4,23 @@ using System;
 using Producer.Models;
 using System.Text.Json;
 using Producer.Data;
+using Microsoft.Extensions.Configuration;
 
 namespace Producer;
 class Producer
 {
     static void Main(string[] args)
     {
-        const string topic = "purchases";
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .Build();
+
+        string topic = configuration.GetSection("KafkaConfigurations").GetValue<string>("Topic")!;
 
         var config = new ProducerConfig
         {
-            BootstrapServers = "kafka-cluster:9092",
+            BootstrapServers = configuration.GetSection("KafkaConfigurations").GetValue<string>("BootstrapServer")!,
             Acks = Acks.All
         };
 
