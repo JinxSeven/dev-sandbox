@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W5GtFMI3E7A=",
+  "dgSpecHash": "W83rCr5/PK8=",
   "success": true,
-  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\TodoApp(SqLite)\\TodoApp(SqLite).csproj",
+  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\TodoApp(SqLite)\\TodoApp(SqLite).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GodBless\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.10\\microsoft.data.sqlite.core.8.0.10.nupkg.sha512",
     "C:\\Users\\GodBless\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
@@ -11,15 +11,5 @@
     "C:\\Users\\GodBless\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\GodBless\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\TodoApp(SqLite)\\TodoApp(SqLite).csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\TodoApp(SqLite)\\TodoApp(SqLite).csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

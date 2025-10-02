@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj": {}
+    "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj": {}
   },
   "projects": {
-    "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj": {
+    "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj",
+        "projectUniqueName": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj",
         "projectName": "PersonalBudgetManager",
-        "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj",
+        "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\PersonalBudgetManager\\PersonalBudgetManager.csproj",
         "packagesPath": "C:\\Users\\GodBless\\.nuget\\packages\\",
-        "outputPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\API-Training\\Sequel101\\PersonalBudgetManager\\obj\\",
+        "outputPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\Sequel101\\PersonalBudgetManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
