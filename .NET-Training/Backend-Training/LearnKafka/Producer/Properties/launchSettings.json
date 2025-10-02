@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Producer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "containerRunArguments": "--network kafka-net"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Simple MessageConsumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "containerRunArguments": "--network kafka-net"
+    }
+  }
+}
