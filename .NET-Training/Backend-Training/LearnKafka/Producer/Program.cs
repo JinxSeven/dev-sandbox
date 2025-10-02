@@ -1,10 +1,8 @@
 ﻿using Confluent.Kafka;
-using System;
-
+using Microsoft.Extensions.Configuration;
+using Producer.Data;
 using Producer.Models;
 using System.Text.Json;
-using Producer.Data;
-using Microsoft.Extensions.Configuration;
 
 namespace Producer;
 class Producer

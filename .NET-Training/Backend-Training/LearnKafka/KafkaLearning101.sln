@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple MessageConsumer", "Consumer\Simple MessageConsumer.csproj", "{9177A56B-F1F8-4ECD-B907-2A69AA062674}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMessageConsumer", "Consumer\SimpleMessageConsumer.csproj", "{9177A56B-F1F8-4ECD-B907-2A69AA062674}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMessageProducer", "Producer\SimpleMessageProducer.csproj", "{7A14C25A-D538-B96B-5201-7C15673AB28D}"
 EndProject

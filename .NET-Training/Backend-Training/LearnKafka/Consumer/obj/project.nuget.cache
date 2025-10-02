@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8WcxDyWawuE=",
+  "dgSpecHash": "yC2eb62E69s=",
   "success": true,
-  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\Simple MessageConsumer.csproj",
+  "projectFilePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\SimpleMessageConsumer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GodBless\\.nuget\\packages\\confluent.kafka\\2.11.1\\confluent.kafka.2.11.1.nupkg.sha512",
     "C:\\Users\\GodBless\\.nuget\\packages\\librdkafka.redist\\2.11.1\\librdkafka.redist.2.11.1.nupkg.sha512",
@@ -22,5 +22,15 @@
     "C:\\Users\\GodBless\\.nuget\\packages\\system.text.encodings.web\\9.0.9\\system.text.encodings.web.9.0.9.nupkg.sha512",
     "C:\\Users\\GodBless\\.nuget\\packages\\system.text.json\\9.0.9\\system.text.json.9.0.9.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\SimpleMessageConsumer.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Skills\\JinxSeven\\Training-Web-Development\\.NET-Training\\Backend-Training\\LearnKafka\\Consumer\\SimpleMessageConsumer.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
